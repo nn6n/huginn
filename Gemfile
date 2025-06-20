@@ -38,7 +38,7 @@ gem 'net-ftp-list' # FtpsiteAgent
 gem 'pirate_weather_forecast_ruby' # WeatherAgent
 gem 'rturk', '~> 2.12.1'          # HumanTaskAgent
 gem 'slack-notifier', '~> 2.4.0'  # SlackAgent
-gem 'twilio-ruby', '~> 7.4.0'     # TwilioAgent
+gem 'twilio-ruby', '~> 7.4.1' # TwilioAgent
 gem 'xmpp4r', '~> 0.5.6'          # JabberAgent
 
 # Weibo Agents
@@ -47,7 +47,7 @@ gem 'weibo_2', github: 'albertsun/weibo_2', branch: 'master'
 
 # GoogleCalendarPublishAgent and GoogleTranslateAgent
 gem 'google-api-client', '~> 0.53'
-gem 'google-cloud-translate-v2'
+gem 'google-cloud-translate-v2', '>= 1.0.1'
 
 # Twitter Agents
 gem 'omniauth-twitter'
@@ -77,7 +77,7 @@ gem 'aws-sdk-s3', '~> 1', '>= 1.177.0'
 
 # ImapFolderAgent
 gem 'gmail_xoauth' # support for Gmail using OAuth
-gem 'omniauth-google-oauth2', '~> 1.0.1'
+gem 'omniauth-google-oauth2', '~> 1.1.0'
 
 # Bundler <1.5 does not recognize :x64_mingw as a valid platform name.
 # Unfortunately, it can't self-update because it errors when encountering :x64_mingw.
@@ -97,10 +97,10 @@ gem 'delayed_job_active_record'
 gem 'devise', '~> 4.9', '>= 4.9.4'
 gem 'em-http-request'
 gem 'execjs'
-gem 'faraday'
+gem 'faraday', '>= 2.12.3'
 # gem 'faraday-em_http'
 gem 'faraday-follow_redirects'
-gem 'faraday-gzip'
+gem 'faraday-gzip', '>= 3.0.3'
 # gem 'faraday-httpclient'
 gem 'faraday-typhoeus'
 gem 'feedjira', '~> 3.2', '>= 3.2.3'
@@ -122,31 +122,31 @@ gem 'mail', '>= 2.8.1'
 gem 'mini_magick', '>= 5.0.1'
 gem 'multi_xml'
 gem 'nokogiri', '>= 1.18.1'
-gem 'omniauth'
-gem 'rails', '~> 7.0.1'
+gem 'omniauth', '>= 2.1.3'
+gem 'rails', '~> 7.1.0'
 gem 'rails-html-sanitizer', '~> 1.6', '>= 1.6.2'
 gem 'rufus-scheduler', '~> 3.9', '>= 3.9.2', require: false
 gem 'sassc-rails'
 gem 'select2-rails'
 gem 'spectrum-rails'
-gem 'sprockets'
+gem 'sprockets', '>= 4.2.2'
 gem 'terser'
 gem 'typhoeus'
 gem 'uglifier'
 
 group :development, :test do
   gem 'debug'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 7.1.1'
 end
 
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.10.1'
   gem 'binding_of_caller'
   gem 'guard'
   gem 'guard-livereload'
   gem 'guard-rspec'
   gem 'letter_opener_web', '~> 3.0'
-  gem 'rack-livereload'
+  gem 'rack-livereload', '>= 0.5.2'
   gem 'web-console', '>= 4.2.1'
 
   gem 'capistrano'
