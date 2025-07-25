@@ -123,7 +123,7 @@ gem 'mini_magick', '>= 5.0.1'
 gem 'multi_xml'
 gem 'nokogiri', '>= 1.18.1'
 gem 'omniauth'
-gem 'rails', '~> 7.0.1'
+gem 'rails', '~> 7.1.0'
 gem 'rails-html-sanitizer', '~> 1.6', '>= 1.6.2'
 gem 'rufus-scheduler', '~> 3.9', '>= 3.9.2', require: false
 gem 'sassc-rails'
@@ -136,13 +136,13 @@ gem 'uglifier'
 
 group :development, :test do
   gem 'debug'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 7.1.1'
 end
 
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'guard'
+  gem 'guard', '>= 2.18.1'
   gem 'guard-livereload'
   gem 'guard-rspec'
   gem 'letter_opener_web', '~> 3.0'
