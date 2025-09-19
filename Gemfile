@@ -115,7 +115,7 @@ gem 'jquery-rails', '~> 4.6'
 gem 'json', '~> 2.9', '>= 2.9.1'
 gem 'jsonpath', '~> 1.1', '>= 1.1.5'
 gem 'kaminari', '~> 1.2', '>= 1.2.2'
-gem 'kramdown'
+gem 'kramdown', '>= 2.5.0'
 gem 'liquid', '~> 5.6'
 gem 'loofah', '~> 2.24'
 gem 'mail', '>= 2.8.1'
@@ -153,9 +153,9 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
 
-  gem 'rubocop', require: false
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rspec', require: false
+  gem 'rubocop', '>= 1.52.0', require: false
+  gem 'rubocop-performance', '>= 1.19.0', require: false
+  gem 'rubocop-rspec', '>= 2.23.0', require: false
 
   if_true(ENV['SPRING']) do
     gem 'spring'
@@ -173,12 +173,12 @@ group :development do
     gem 'rspec-collection_matchers'
     gem 'rspec-html-matchers'
     gem 'rspec-mocks'
-    gem 'selenium-webdriver'
+    gem 'selenium-webdriver', '>= 4.10.0'
     gem 'shoulda-matchers'
     gem 'simplecov', require: false
     gem 'simplecov-lcov', '~> 0.8.0', require: false
     gem 'vcr'
-    gem 'webmock'
+    gem 'webmock', '>= 3.19.0'
   end
 end
 
