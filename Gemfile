@@ -99,7 +99,7 @@ gem 'em-http-request'
 gem 'execjs'
 gem 'faraday'
 # gem 'faraday-em_http'
-gem 'faraday-follow_redirects'
+gem 'faraday-follow_redirects', '>= 0.4.0'
 gem 'faraday-gzip'
 # gem 'faraday-httpclient'
 gem 'faraday-typhoeus'
@@ -153,9 +153,9 @@ group :development do
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
 
-  gem 'rubocop', require: false
-  gem 'rubocop-performance', require: false
-  gem 'rubocop-rspec', require: false
+  gem 'rubocop', '>= 1.66.0', require: false
+  gem 'rubocop-performance', '>= 1.19.0', require: false
+  gem 'rubocop-rspec', '>= 2.23.0', require: false
 
   if_true(ENV['SPRING']) do
     gem 'spring'
