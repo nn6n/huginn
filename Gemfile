@@ -77,7 +77,7 @@ gem 'aws-sdk-s3', '~> 1', '>= 1.177.0'
 
 # ImapFolderAgent
 gem 'gmail_xoauth' # support for Gmail using OAuth
-gem 'omniauth-google-oauth2', '~> 1.0.1'
+gem 'omniauth-google-oauth2', '~> 1.1.0'
 
 # Bundler <1.5 does not recognize :x64_mingw as a valid platform name.
 # Unfortunately, it can't self-update because it errors when encountering :x64_mingw.
@@ -122,31 +122,31 @@ gem 'mail', '>= 2.8.1'
 gem 'mini_magick', '>= 5.0.1'
 gem 'multi_xml'
 gem 'nokogiri', '>= 1.18.1'
-gem 'omniauth'
-gem 'rails', '~> 7.0.1'
+gem 'omniauth', '>= 2.1.3'
+gem 'rails', '~> 7.1.0'
 gem 'rails-html-sanitizer', '~> 1.6', '>= 1.6.2'
 gem 'rufus-scheduler', '~> 3.9', '>= 3.9.2', require: false
 gem 'sassc-rails'
 gem 'select2-rails'
 gem 'spectrum-rails'
-gem 'sprockets'
+gem 'sprockets', '>= 4.2.2'
 gem 'terser'
 gem 'typhoeus'
 gem 'uglifier'
 
 group :development, :test do
   gem 'debug'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 7.1.1'
 end
 
 group :development do
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.10.1'
   gem 'binding_of_caller'
   gem 'guard'
   gem 'guard-livereload'
   gem 'guard-rspec'
   gem 'letter_opener_web', '~> 3.0'
-  gem 'rack-livereload'
+  gem 'rack-livereload', '>= 0.5.2'
   gem 'web-console', '>= 4.2.1'
 
   gem 'capistrano'
