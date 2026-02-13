@@ -38,7 +38,7 @@ gem 'net-ftp-list' # FtpsiteAgent
 gem 'pirate_weather_forecast_ruby' # WeatherAgent
 gem 'rturk', '~> 2.12.1'          # HumanTaskAgent
 gem 'slack-notifier', '~> 2.4.0'  # SlackAgent
-gem 'twilio-ruby', '~> 7.4.0'     # TwilioAgent
+gem 'twilio-ruby', '~> 7.4.1' # TwilioAgent
 gem 'xmpp4r', '~> 0.5.6'          # JabberAgent
 
 # Weibo Agents
@@ -47,7 +47,7 @@ gem 'weibo_2', github: 'albertsun/weibo_2', branch: 'master'
 
 # GoogleCalendarPublishAgent and GoogleTranslateAgent
 gem 'google-api-client', '~> 0.53'
-gem 'google-cloud-translate-v2'
+gem 'google-cloud-translate-v2', '>= 1.0.1'
 
 # Twitter Agents
 gem 'omniauth-twitter'
@@ -77,7 +77,7 @@ gem 'aws-sdk-s3', '~> 1', '>= 1.177.0'
 
 # ImapFolderAgent
 gem 'gmail_xoauth' # support for Gmail using OAuth
-gem 'omniauth-google-oauth2', '~> 1.0.1'
+gem 'omniauth-google-oauth2', '~> 1.1.0'
 
 # Bundler <1.5 does not recognize :x64_mingw as a valid platform name.
 # Unfortunately, it can't self-update because it errors when encountering :x64_mingw.
@@ -97,10 +97,10 @@ gem 'delayed_job_active_record'
 gem 'devise', '~> 4.9', '>= 4.9.4'
 gem 'em-http-request'
 gem 'execjs'
-gem 'faraday'
+gem 'faraday', '>= 2.14.1'
 # gem 'faraday-em_http'
-gem 'faraday-follow_redirects'
-gem 'faraday-gzip'
+gem 'faraday-follow_redirects', '>= 0.4.0'
+gem 'faraday-gzip', '>= 3.0.3'
 # gem 'faraday-httpclient'
 gem 'faraday-typhoeus'
 gem 'feedjira', '~> 3.2', '>= 3.2.3'
